@@ -1,0 +1,18 @@
+# Visual Studio i MSVC privremene datoteke
+.vs/
+.vscode/
+*.pdb
+*.obj
+*.ilk
+*.idb
+
+# Izlazne izvršne i build datoteke
+*.exe
+*.out
+*.dll
+Debug/
+Release/
+build/
+
+# Log datoteke
+*.log
