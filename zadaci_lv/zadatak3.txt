@@ -1,0 +1,42 @@
+int insertAfter(char* lastName, position head){
+position newPerson=NULL;
+findLastName(head, lastName);
+alokacija
+insertBegin(head,lastName);
+
+insertBefore(char*lastName, position head){
+position newPerson=NULL;
+finddLastName(head->next, lastName);
+alok.
+insertAfter(head,lastName);
+
+//d)otvorit datoteku, fprintf, zatvorit
+//e)otvorit datoteku, fscanf,insertBegin, zatvorit
+
+c)
+int sort(
+	if(head->next==NULL)			\\provjeravamo je li lista prazna.
+		return greška;
+
+position p=head->next;
+position temp=NULL;
+position q;
+position sorted=NULL;
+
+while(p->next!=sorted){
+if(srcmp(p->lastN, p->next->lastN)>0){
+temp=p->next;
+p->next=temp->next;
+temp->next=p;
+q=temp;
+p=q->next;
+}
+else{
+q=p;
+p=p->next;}
+}
+
+if(p->next==NULL){
+sorted=p;
+q=head;
+p=q->next;}
