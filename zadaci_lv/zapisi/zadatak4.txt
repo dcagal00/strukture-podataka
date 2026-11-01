@@ -1,0 +1,39 @@
+Strukture podataka 28.10.2026.
+
+4x^2 + 3x^4 - 2
+ 4 2   3 4   -2 0
+5x + 2x^4 - x^2 + 2 - 7x^5
+
+8x^2 + 2x^2 --> ne! moraju se zbrojiti!
+
+typedef struct Poly* position;
+
+typedef struct Poly{
+	int ?;
+	int pow;
+	position 
+}polynom;
+
+
+-u mainu:
+	polynom head=
+	polynom headF=head;
+	polynom headS=head;
+
+-čitanje datoteka+buffer
+
+-unos podataka
+
+position newPoly-> ulaz? + unos
+
+1)	if(q->next==NULL)
+		insertBegin(q, newPoly);
+
+2)	if(q!=NULL && newP->pow > q->next->pow)
+		insertBegin(q, newPoly);
+
+3)	if(q!=NULL && newPoly->pow < q->next->pow)
+		q=q->next;
+
+
+-zbrajanje	
