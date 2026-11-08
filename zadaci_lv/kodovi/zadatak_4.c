@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 typedef struct poly *position;
 
@@ -11,6 +12,7 @@ typedef struct poly{
 int sortiraniUnos(position head, int coef, int pow);
 int ucitajIzDatoteke(position head, const char *filename);
 int zbrojiPolinome(position headF, position headS, position headZ);
+int pomnoziPolinome(position headF, position headS, position headZ);
 int izbrisiPolinom(position head);
 
 int main() {
@@ -103,6 +105,21 @@ int zbrojiPolinome(position headF, position headS, position headZ){
     return 0;
 }
 
+int pomnoziPolinome(position headF, position headS, position headZ){
+
+    
+    position currentF;
+    position currentS;
+
+
+    for(currentF = headF->next; currentF!=NULL; currentF= currentF->next){
+        for(currentS=headS->next; currentS!=NULL; currentS=currentS->next){
+            if(sortiraniUnos(headZ, currentF->coef * currentS->coef, currentF->pow + currentS->pow)!=0)
+                return -1;
+        }
+    }
+    return 0;
+}
 int izbrisiPolinom(position head){
 
     position current= head->next;
